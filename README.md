@@ -9,6 +9,8 @@ Make sure you have set up your AWS credentials (using `aws configure`) and that 
 
 ## Usage
 
+### aws_ssh_by_hostname.py
+
 ```bash
 usage: aws_ssh_by_hostname.py [-h] [--bastion user@bastion] [--public]
                               [--index i] [-p PORT]
