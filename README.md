@@ -1,5 +1,9 @@
 # AWS SSH Helpers
 
+SSH directly into any EC2 instance in AWS by name (ie. tag).
+If your instances live behind a bastion machine, you can specify
+that by name too!
+
 ## Prerequisites
 
 * Python (2.7+)
