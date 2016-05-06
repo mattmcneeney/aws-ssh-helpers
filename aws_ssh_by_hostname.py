@@ -63,7 +63,10 @@ def main():
 
 def findInstanceByName(name, num, usePublicIp):
    response = ec2.describe_instances(
-      Filters=[{ 'Name': 'tag:Name', 'Values': [name] }]
+      Filters=[
+         { 'Name': 'tag:Name', 'Values': [name] },
+         { 'Name': 'instance-state-name', 'Values': ['running'] }
+      ]
    )
    tag = 'PrivateIpAddress'
    if usePublicIp:
